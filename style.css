@@ -1,0 +1,114 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    /* ### Primary */
+    --red: hsl(0, 100%, 74%); 
+    --green: #38cc8c; 
+  
+    /* ### Accent */
+
+    --blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+
+    /* ### Font */
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+.grid {
+    max-height: 100%;
+    width: 100vw;
+    padding: 20px;
+    background-image: url("/images/bg-intro-mobile.png");
+    background-color: var(--red);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.text__container {
+    text-align: center;
+    color: white;
+}
+
+.text__headline {
+    padding-bottom: 15px;
+}
+.text {
+    padding-bottom: 100px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.try {
+    background-color:purple;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.75);
+
+}
+
+.try__highlight {
+    font-weight: 700;
+}
+
+.form__container {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.75);
+
+}
+
+.form__input {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--grayish-blue);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.form__button {
+    font-size: 1rem;
+    background-color: var(--green);
+    color: white;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.75);
+    border: none;
+    text-transform: uppercase;
+}
+
+.form__fineprint {
+    color: var(--grayish-blue);
+    text-align: center;
+    font-size: 0.7rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form__fineprint_highlight {
+    color: var(--red);
+}
