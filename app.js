@@ -65,7 +65,7 @@ function ContactForm() {
 
         }
         if (!isValidEmail(event.target.email.value)) {
-            err.email = "besked"
+            err.email = "This is not a valid email"
           }
 
         if (event.target.email.value === "") {
