@@ -112,3 +112,8 @@ html {
 .form__fineprint_highlight {
     color: var(--red);
 }
+
+.error {
+    display: block;
+    color: red;
+}
